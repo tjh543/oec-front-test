@@ -24,6 +24,10 @@ const Home = () => {
   if (isError) {
     console.log(error);
   }
+  if (isSuccess) {
+    console.log(data);
+  }
+
 
  return (
   <>
@@ -61,7 +65,8 @@ const Home = () => {
       <div>
         {isLoading && <div>Loading...</div>}
         {isError && <div>Fetching error</div>}
-        {isSuccess && <div>Suc</div>}
+        {isSuccess && <div>Suce</div>}
+          
       </div>
   </>
  );
